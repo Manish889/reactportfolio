@@ -1,13 +1,55 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --nav-bg: #72147e;
+  --nav-active: #6a9213;
+  --btn-color: #5c54a4;
+  --color-green: #81b214;
+  --primary-blue: #7c83fd;
+  --purple-light: #bea9de;
+  --footer-color: #0c1445;
+  --text-color-black: #000000;
+  --text-color-white: #f1f1f1;
+  --para-color: rgba(0, 0, 0, 0.7);
+  --secondary-heading: rgba(0, 0, 0, 0.8);
+  --main-heading: rgba(0, 0, 0, 0.9);
+
+  /* 1200px */
+  --bp-largest: 75em;
+  /* 100px */
+  --bp-large: 62.5em;
+  /* 800px */
+  --bp-medium: 50em;
+  /* 600px */
+  --bp-small: 37.5em;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr repeat(6, 18rem) 1fr;
 }
